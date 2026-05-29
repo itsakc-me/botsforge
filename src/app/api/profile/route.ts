@@ -11,9 +11,10 @@ export async function POST(req: Request) {
         });
 
         return NextResponse.json(response);
-    } catch (error) {
+    } catch (err: unknown) {
+        const message = err instanceof Error ? err.message : String(err);
         return NextResponse.json(
-            { error: 'Failed to update user name!' },
+            { error: 'Failed to update user name! ' + message },
             { status: 500 }
         );
     }

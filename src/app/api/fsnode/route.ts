@@ -31,9 +31,12 @@ export async function POST(req: Request) {
 		});
 
 		return NextResponse.json(fsNode);
-	} catch (error) {
+	} catch (err: unknown) {
+		// Normalize unknown error to a message string without using `any`
+		const message = err instanceof Error ? err.message : String(err);
+		// include the underlying error message for easier debugging
 		return NextResponse.json(
-			{ error: "Failed to create FSNode! " },
+			{ error: "Failed to create FSNode! " + message },
 			{ status: 500 }
 		);
 	}
@@ -54,9 +57,11 @@ export async function DELETE(req: Request) {
 
 		recursiveDelete(fsNode!);
 		return NextResponse.json(fsNode);
-	} catch (error) {
+	} catch (err: unknown) {
+		const message = err instanceof Error ? err.message : String(err);
+		// surface the original error message for easier debugging
 		return NextResponse.json(
-			{ error: "Failed to delete FSNode!" },
+			{ error: "Failed to delete FSNode! " + message },
 			{ status: 500 }
 		);
 	}
@@ -80,10 +85,11 @@ export async function GET(req: Request) {
 			});
 			return NextResponse.json(fsnodes);
 		}
-    } catch (error) {
-        return NextResponse.json(
-            { error: "Failed to retrieve fsnodes! " + error },
-            { status: 500 }
-        )
-    }
+	} catch (err: unknown) {
+		const message = err instanceof Error ? err.message : String(err);
+		return NextResponse.json(
+			{ error: "Failed to retrieve fsnodes! " + message },
+			{ status: 500 }
+		);
+	}
 }

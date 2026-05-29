@@ -16,7 +16,7 @@ export default function Account(): ReactElement {
 			<div className="w-fit max-w-4xl mx-auto p-6">
 				<div className="max-w-fit p-4 rounded-lg flex flex-col items-center">
 					<Image
-						src={session?.user?.image!}
+						src={session?.user?.image ?? "/logo.png"}
 						className="rounded-full mx-auto mb-4"
 						alt="Profile"
 						width={128}

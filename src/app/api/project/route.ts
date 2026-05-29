@@ -25,10 +25,11 @@ export async function POST(req: Request) {
         });
 
         return NextResponse.json(project);
-    } catch (error) {
-        console.error(error);
+    } catch (err: unknown) {
+        const message = err instanceof Error ? err.message : String(err);
+        console.error(err);
         return NextResponse.json(
-            { error: "Failed to create project!" },
+            { error: "Failed to create project! " + message },
             { status: 500 }
         );
     }
@@ -48,9 +49,10 @@ export async function DELETE(req: Request) {
         });
 
         return NextResponse.json(project);
-    } catch (error) {
+    } catch (err: unknown) {
+        const message = err instanceof Error ? err.message : String(err);
         return NextResponse.json(
-            { error: "Failed to delete project!" },
+            { error: "Failed to delete project! " + message },
             { status: 500 }
         );
     }
@@ -78,10 +80,11 @@ export async function GET(req: Request) {
             });
             return NextResponse.json(projects);
         }
-    } catch (error) {
+    } catch (err: unknown) {
+        const message = err instanceof Error ? err.message : String(err);
         return NextResponse.json(
-            { error: "Failed to retrieve project/projects!" },
+            { error: "Failed to retrieve project/projects! " + message },
             { status: 500 }
-        )
+        );
     }
 }
