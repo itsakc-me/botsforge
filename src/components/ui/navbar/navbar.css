@@ -1,0 +1,34 @@
+.active-sidebar {
+    left: -288px !important;
+}
+
+.ml-layout-72 {
+    margin-left: 0 !important;
+}
+
+@media screen and (max-width: 640px) {
+    .active-searcharea {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        align-items: start;
+        padding-top: 10rem;
+        border-radius: 0;
+        background-color: color-mix(in oklab,
+            var(--color-base-content) 50%,
+                transparent);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .active-sidebar {
+        left: 0 !important;
+    }
+
+    .ml-layout-72 {
+        margin-left: 288px !important;
+    }
+}

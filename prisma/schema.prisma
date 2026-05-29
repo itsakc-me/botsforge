@@ -1,0 +1,74 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "mongodb"
+    url      = env("DATABASE_URL")
+}
+
+model Account {
+    id                String  @id @default(auto()) @map("_id") @db.ObjectId
+    userId            String  @db.ObjectId
+    type              String
+    provider          String
+    providerAccountId String
+    refresh_token     String? @db.String
+    access_token      String? @db.String
+    expires_at        Int?
+    token_type        String?
+    scope             String?
+    id_token          String? @db.String
+    session_state     String?
+
+    user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+    @@unique([provider, providerAccountId])
+}
+
+model User {
+    id            String    @id @default(auto()) @map("_id") @db.ObjectId
+    name          String?
+    email         String    @unique
+    emailVerified DateTime? @db.Date
+    image         String?
+    accounts      Account[]
+    Session       Session[]
+    projects      Project[]
+}
+
+model Session {
+    id           String   @id @default(auto()) @map("_id") @db.ObjectId
+    userId       String   @db.ObjectId
+    sessionToken String   @unique
+    expires      DateTime
+    user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Project {
+    id          String    @id @default(auto()) @map("_id") @db.ObjectId
+    userId      String?   @db.ObjectId
+    fsnodeId    String    @db.ObjectId
+    name        String
+    isTemporary Boolean   @default(false)
+    createdAt   DateTime  @default(now())
+    expiresAt   DateTime?
+    user        User?     @relation(fields: [userId], references: [id], onDelete: Cascade)
+    fsnode      FSNode    @relation(fields: [fsnodeId], references: [id])
+
+    @@unique([name])
+}
+ model FSNode {
+    id         String    @id @default(auto()) @map("_id") @db.ObjectId
+    name       String
+    type       String
+    path       String
+    contentKey String
+    parentId   String?   @db.ObjectId
+    parent     FSNode?   @relation("ParentChildren", fields: [parentId], references: [id], onUpdate: NoAction, onDelete: NoAction)
+    children   FSNode[]  @relation("ParentChildren")
+    createdAt  DateTime  @default(now())
+    project    Project[]
+
+    @@unique([path])
+}
