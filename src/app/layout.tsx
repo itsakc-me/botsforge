@@ -1,6 +1,6 @@
 import * as Fonts from "@/assets/fonts";
 import type { Metadata } from "next";
-import { ReactElement } from "react";
+import React, { ReactElement } from "react";
 import Providers from "./providers";
 import "./globals.css";
 

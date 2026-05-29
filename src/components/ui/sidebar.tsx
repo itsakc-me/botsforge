@@ -19,9 +19,9 @@ export default function Sidebar(): ReactElement {
   return (
     <ul
       id="sidebar"
-      className="base sidebar transition-all ease-in-out duration-300 fixed z-1 top-0 left-0 max-lg:left-[-100%] overflow-x-hidden flex flex-col items-start justify-start gap-7 w-72 px-6 py-8 border-r-2 border-base-100 shadow-md shadow-base-100"
+      className="base sidebar transition-all ease-in-out duration-300 fixed z-1 top-0 left-0 max-lg:left-[-100%] overflow-x-hidden overflow-y-auto max-h-screen flex flex-col items-start justify-start gap-7 w-72 px-6 py-8 border-r-2 border-base-100 shadow-md shadow-base-100"
     >
-      <IoCodeSlashOutline className="text-8xl m-auto text-accent min-w-fit min-h-fit" />
+      <IoCodeSlashOutline className="text-8xl m-auto text-accent min-w-fit min-h-fit flex-shrink-0" />
       <div className="flex flex-col items-start justify-center gap-2 w-full">
         <sub className="text-[1rem] mb-1">
           <div className="inline-flex items-center gap-2">
