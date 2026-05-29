@@ -75,7 +75,7 @@ export default function Contact() {
 								Report bugs or request features on GitHub.
 							</p>
 							<Link
-								href="https://github.com/xZcv-botsforge/botsforge/issues"
+								href="https://github.com/itsakc-me/botsforge/issues"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="btn btn-accent text-base-200"

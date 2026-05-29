@@ -3,9 +3,9 @@
 **Build, Scale, and Manage Bots in the Cloud with Ease**  
 *Empowering developers to create and deploy bots effortlessly, right from your hands!*
 
-[![GitHub License](https://img.shields.io/github/license/xZcv-botsforge/botsforge)](https://github.com/xZcv-botsforge/botsforge/blob/main/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](https://github.com/xZcv-botsforge/botsforge/pulls)
-[![GitHub Issues](https://img.shields.io/github/issues/xZcv-botsforge/botsforge)](https://github.com/xZcv-botsforge/botsforge/issues)
+[![GitHub License](https://img.shields.io/github/license/itsakc-me/botsforge)](https://github.com/itsakc-me/botsforge/blob/main/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](https://github.com/itsakc-me/botsforge/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/itsakc-me/botsforge)](https://github.com/itsakc-me/botsforge/issues)
 
 BotsForge is an **open-source platform** designed to simplify bot development and management. Whether you're creating Telegram bots, Discord bots, or other automation tools, BotsForge offers **block-based coding**, **text-based scripting**, and seamless GitHub integration to streamline your workflow. All in the cloud, all in your control.
 
@@ -57,7 +57,7 @@ BotsForge is just getting started, and your help is crucial to bringing its visi
 
 ### How to Contribute:
 1. Fork the repository.
-2. Check the [Issues](https://github.com/xZcv-botsforge/botsforge/issues) for tasks.
+2. Check the [Issues](https://github.com/itsakc-me/botsforge/issues) for tasks.
 3. Submit a Pull Request with your changes.
 4. Follow our [Contributing Guidelines](CONTRIBUTING.md) (to be added).
 
@@ -103,6 +103,6 @@ BotsForge is licensed under the [MIT License](LICENSE).
 ---
 
 **Let’s build the future of bot development together!**  
-🔗 GitHub: [https://github.com/xZcv-botsforge/botsforge](https://github.com/xZcv-botsforge/botsforge)  
-🐛 Report Issues: [GitHub Issues](https://github.com/xZcv-botsforge/botsforge/issues)  
-💬 Discuss Ideas: [Discussions](https://github.com/xZcv-botsforge/botsforge/discussions)
+🔗 GitHub: [https://github.com/itsakc-me/botsforge](https://github.com/itsakc-me/botsforge)  
+🐛 Report Issues: [GitHub Issues](https://github.com/itsakc-me/botsforge/issues)  
+💬 Discuss Ideas: [Discussions](https://github.com/itsakc-me/botsforge/discussions)

@@ -11,13 +11,13 @@ type Contributor = {
 };
 
 async function getContributors() {
-	const res = await fetch("https://api.github.com/repos/xZcv-botsforge/botsforge/contributors");
+	const res = await fetch("https://api.github.com/repos/itsakc-me/botsforge/contributors");
 	if (!res.ok) throw new Error("Failed to fetch contributors");
 	return res.json();
 }
 
 async function getRepoStats() {
-	const res = await fetch("https://api.github.com/repos/xZcv-botsforge/botsforge");
+	const res = await fetch("https://api.github.com/repos/itsakc-me/botsforge");
 	if (!res.ok) throw new Error("Failed to fetch repo stats");
 	return res.json();
 }
@@ -95,7 +95,7 @@ export default async function About() {
 						contributing today!
 					</p>
 					<Link
-						href="https://github.com/xZcv-botsforge/botsforge"
+						href="https://github.com/itsakc-me/botsforge"
 						className="btn btn-primary"
 					>
 						Contribute Now →

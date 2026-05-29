@@ -79,7 +79,7 @@ export default function FAQ(): ReactElement {
 										suggesting features, or submitting pull
 										requests. Check out our{" "}
 										<Link
-											href="https://github.com/xZcv-botsforge/botsforge/blob/main/CONTRIBUTING.md"
+											href="https://github.com/itsakc-me/botsforge/blob/main/CONTRIBUTING.md"
 											className="link link-primary"
 										>
 											Contribution Guidelines

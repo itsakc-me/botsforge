@@ -115,7 +115,7 @@ export default function HelpCenterPage() {
 							<p className="text-center opacity-80">
 								Report bugs or request features on our{" "}
 								<a
-									href="https://github.com/xZcv-botsforge/botsforge/issues"
+									href="https://github.com/itsakc-me/botsforge/issues"
 									className="link"
 									target="_blank"
 									rel="noopener noreferrer"

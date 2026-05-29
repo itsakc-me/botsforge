@@ -25,7 +25,7 @@ export default function Home(): ReactElement {
                         <Link href="/docs/getting-started" className="btn btn-primary btn-md">
                             Get Started →
                         </Link>
-                        <Link href="https://github.com/xZcv-botsforge/botsforge" className="btn btn-outline btn-md">
+                        <Link href="https://github.com/itsakc-me/botsforge" className="btn btn-outline btn-md">
                             View on GitHub ↗
                         </Link>
                     </div>

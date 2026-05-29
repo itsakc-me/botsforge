@@ -12,7 +12,7 @@ export default function QuickLinks(): ReactElement {
                     <h3 className="text-xl font-semibold">Documentation</h3>
                     <p className="text-center opacity-80">Learn how to use BotsForge.</p>
                 </Link>
-                <Link href="https://github.com/xZcv-botsforge/botsforge" className="card p-6 flex flex-col items-center gap-4 rounded-2xl bg-base-200 hover:bg-base-300/50 hover:shadow-lg transition-all">
+                <Link href="https://github.com/itsakc-me/botsforge" className="card p-6 flex flex-col items-center gap-4 rounded-2xl bg-base-200 hover:bg-base-300/50 hover:shadow-lg transition-all">
                     <FaGithub className="text-4xl text-secondary" />
                     <h3 className="text-xl font-semibold">GitHub</h3>
                     <p className="text-center opacity-80">Star the repo and contribute.</p>

@@ -119,7 +119,7 @@ export default function Sidebar(): ReactElement {
             Community Forum
           </Link>
           <Link
-            href="https://github.com/xZcv-botsforge/botsforge/blob/main/CONTRIBUTING.md"
+            href="https://github.com/itsakc-me/botsforge/blob/main/CONTRIBUTING.md"
             className="font-medium text-lg hover:cursor-pointer hover:link-primary"
           >
             Contribute

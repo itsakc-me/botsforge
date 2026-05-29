@@ -23,7 +23,7 @@ export default function Footer(): ReactElement {
 							bots.
 						</p>
 						<div className="flex gap-4">
-							<a href="https://github.com/xZcv-botsforge/botsforge" className="opacity-80 hover:opacity-100">
+							<a href="https://github.com/itsakc-me/botsforge" className="opacity-80 hover:opacity-100">
 								<FaGithub className="text-2xl" />
 							</a>
 							<a href="https://x.com/itsakc_me" className="opacity-80 hover:opacity-100">
@@ -38,7 +38,7 @@ export default function Footer(): ReactElement {
 						<h3 className="text-lg font-semibold">Quick Links</h3>
 						<Link href="/docs" className="opacity-80 hover:opacity-100">Documentation</Link>
 						<Link href="/examples" className="opacity-80 hover:opacity-100">Examples</Link>
-						<Link href="https://github.com/xZcv-botsforge/botsforge/blob/main/CONTRIBUTING.md" className="opacity-80 hover:opacity-100">Contribute</Link>
+						<Link href="https://github.com/itsakc-me/botsforge/blob/main/CONTRIBUTING.md" className="opacity-80 hover:opacity-100">Contribute</Link>
 						<Link href="/contact" className="opacity-80 hover:opacity-100">Contact Us</Link>
 					</div>
 					<div className="flex flex-col gap-4">

@@ -30,7 +30,7 @@ Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md). We are committ
 ## **How Can I Contribute?**
 
 ### **Reporting Bugs**
-- Check the [Issues](https://github.com/xZcv-botsforge/botsforge/issues) to see if the bug has already been reported.
+- Check the [Issues](https://github.com/itsakc-me/botsforge/issues) to see if the bug has already been reported.
 - If not, open a new issue and provide:
   - A clear and descriptive title.
   - Steps to reproduce the bug.
@@ -62,7 +62,7 @@ Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md). We are committ
 ### Steps
 1. Fork the repository and clone it locally:
    ```bash
-   git clone https://github.com/xZcv-botsforge/botsforge.git
+   git clone https://github.com/itsakc-me/botsforge.git
    cd botsforge
    ```
 2. Install dependencies:
