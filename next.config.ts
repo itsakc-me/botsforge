@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
 };
 
 if (process.env.NODE_ENV === "production") {
-   nextConfig["basePath"] = "/botsforge";
+   // nextConfig["basePath"] = "/botsforge";
    // NOTE: `output: 'export'` requires all dynamic routes to provide
    // `generateStaticParams()` (or be fully static). Removing this by
    // default avoids build-time errors for dynamic app routes. If you
